@@ -3,7 +3,7 @@ class KeyboardController {
 
     constructor() {
         this.keyTimers = {}; // Lookup of key codes to timer ID, or null for no repeat
-        this.keys = new Set(["w", "a", "s", "d", "ArrowUp", "ArrowLeft", "ArrowDown", "ArrowRight", " "]);
+        this.keys = new Set(["w", "a", "s", "d","q","e","ArrowUp", "ArrowLeft", "ArrowDown", "ArrowRight", " "]);
         this.keysPressed = {};
         this.repeatTime = 200; // Determined how fast key repeat events are sent
 
