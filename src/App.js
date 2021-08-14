@@ -42,12 +42,14 @@ import slide5 from "./assets/robot-photo3.jpg";
 
 
 function App() {
+
     const bgImageList = [slide1, slide2, slide3, slide4, slide5];
     window.appComponent = this;
 
     useEffect(() => {
         console.log("started");
-        signallingServer.initialize("localhost", 49621);
+        // signallingServer.initialize("localhost", 49621); // Comment this if running on AWS
+        signallingServer.initialize("18.142.123.26", 49621); // Uncomment this if running on AWS
     }, []);
 
     return (
