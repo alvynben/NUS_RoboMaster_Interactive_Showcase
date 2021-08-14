@@ -83,7 +83,7 @@ function GameSelect(props) {
             </h3>
           </div>
 
-          <div className="image-container">
+          {/* <div className="image-container">
             <Link
               onClick={() => {
                 window.appComponent.setState({
@@ -100,7 +100,7 @@ function GameSelect(props) {
             <h3 align="center" className="image-para">
               Shooting
             </h3>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
